@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './Pages/footer'
 import Navbar from "./Pages/navbar"
 import ContactForm from "./screen/contact"
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
     <Navbar></Navbar>
     <ContactForm></ContactForm>
+    <Footer></Footer>
     </>
   )
 }
