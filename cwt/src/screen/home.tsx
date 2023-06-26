@@ -1,3 +1,4 @@
+import "../index.css"
 import phone_icon from "../assets/images/phone_icon.png"
 import property from "../assets/images/Property 1=Frame 102.png"
 import triangle from "../assets/images/triangle.png"
@@ -30,13 +31,13 @@ import vitejs from "../assets/images/vitejs.png"
 import vs from "../assets/images/vs.png"
 import xd from "../assets/images/xd.png"
 import Iconpack from "../assets/images/Icon pack.png"
-
+import Marquee from "react-fast-marquee";
 import nextjs from "../assets/images/nextjs.png"
 
 export default function homePage() {
   return (
     <div className="w-full">
-      <div className="bg-primary-dark pb-[12rem]">
+      <div className="bg-primary-dark pb-[12rem] ">
         <div className="flex md:flex-row flex-col-reverse justify-center items-center bg-primary-dark">
           <div className="flex flex-col w-[80%] md:w-[45%] px-5 gap-10">
             <div className="flex flex-col space-y-5">
@@ -60,16 +61,16 @@ export default function homePage() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img src={property} alt="image" />
+            <img src={property} alt="image" className="rotating md-w-full w-[80%]" />
           </div>
         </div>
         <div className="flex items-center justify-center">
           <div className="bg-primary-green w-[75%] h-[0.01em]"></div>
         </div>
 
-        <div className="flex flex-col items-center justify-center mt-20">
+        <div className="flex flex-col items-center justify-center mt-20 ">
           <div className="flex flex-col items-center space-y-2">
-            <h1 className="text-primary-green w-[80%] md:w-[50%] text-center text-3xl font-bold">Tap Into Your Potential with Our Comprehensive Service Suite</h1>
+            <h1 className="text-primary-green w-[80%] md:w-[50%] text-center md:text-3xl font-bold">Tap Into Your Potential with Our Comprehensive Service Suite</h1>
             <p className="text-primary-light md:text-md  w-[80%] text-center ">Our services are designed to empower your business, providing innovative solutions tailored to your unique needs. From cutting-edge technology to expert consultation, we've got you.</p>
           </div>
         </div>
@@ -98,7 +99,7 @@ export default function homePage() {
           </div>
         </div>
       </div>
-      <div className="h-[100vh] bg-white mt-[8rem] flex flex-col items-center">
+      <div className="h-[100vh] bg-white mt-[8rem] z-50  flex flex-col items-center">
         <div className="flex flex-col space-y-3 item-center justify-center mb-10">
           <div>
             <h1 className="text-primary-dark text-center text-3xl font-bold">Tech stack that serves you well today and when</h1> <h1 className="text-primary-dark text-center text-3xl font-bold"> you grow 10x in the next 24 months.</h1>
@@ -110,94 +111,98 @@ export default function homePage() {
         </div>
         {/* icons */}
         <div className="mt-20 flex flex-col gap-[3rem]">
-          <div className="flex flex-row ">
-            <div>
-              <img src={analytics} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={ai} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={bitbucker} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={bootstrap} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={aws} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={aws_ec2} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={bootstrap4} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={bootstrap5} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={git} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={github} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={gitlab} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={id} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={jamstack} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={xd} alt="analytics" className="w-[7rem]" />
-            </div>
+          <Marquee>
+            <div className="flex flex-row">
+              <div className="">
+                <img src={analytics} alt="analytics" className="w-[7rem] " />
+              </div>
+              <div className="">
+                <img src={ai} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={bitbucker} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={bootstrap} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={aws} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={aws_ec2} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={bootstrap4} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={bootstrap5} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={git} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={github} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={gitlab} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={id} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={jamstack} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={xd} alt="analytics" className="w-[7rem]" />
+              </div>
 
-          </div>
-          <div className="flex flex-row">
-            <div>
-              <img src={js} alt="analytics" className="w-[7rem]" />
             </div>
-            <div>
-              <img src={mongodb} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={nodejs} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={php} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={python} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={ps} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={reactjs} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={rust} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={saas} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={sveltejs} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={vitejs} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={vs} alt="analytics" className="w-[7rem]" />
-            </div>
-            <div>
-              <img src={nextjs} alt="analytics" className="w-[7rem]" />
-            </div>
+          </Marquee>
+          <Marquee delay={0.5}>
+            <div className="flex flex-row">
+              <div>
+                <img src={js} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={mongodb} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={nodejs} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={php} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={python} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={ps} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={reactjs} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={rust} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={saas} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={sveltejs} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={vitejs} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={vs} alt="analytics" className="w-[7rem]" />
+              </div>
+              <div>
+                <img src={nextjs} alt="analytics" className="w-[7rem]" />
+              </div>
 
 
-          </div>
+            </div>
+          </Marquee>
         </div>
       </div>
       <div className="bg-primary-dark pb-[5rem] py-10">
@@ -239,15 +244,15 @@ export default function homePage() {
             <h1 className="text-primary-green text-3xl font-bold">Trusted by 15+ eCommerce Businesses</h1>
           </div>
           <div className="flex md:flex-row flex-col md:p-0 p-5 justify-between gap-[5rem]">
-            <div className="w-[15rem] md:w-[15rem] h-[15rem] bg-opacity-25 bg-primary-light flex flex-col items-center rounded-3xl justify-center">
+            <div className="w-[10rem] lg:w-[15rem] md:w-[12em] h-[15rem] bg-opacity-25 bg-primary-light flex flex-col items-center rounded-3xl justify-center">
               <p className="text-[3rem] font-bold text-primary-green">20+</p>
               <p className="text-primary-light">Onboarding Calls</p>
             </div>
-            <div className="w-[15rem] md:w-[15rem] h-[15rem] bg-opacity-25 bg-primary-light flex flex-col items-center rounded-3xl justify-center">
+            <div className="w-[10rem] lg:w-[15rem] md:w-[12em] h-[15rem] bg-opacity-25 bg-primary-light flex flex-col items-center rounded-3xl justify-center">
               <p className="text-[3rem] font-bold text-primary-green">100%</p>
               <p className="text-primary-light">Client Satisfaction</p>
             </div>
-            <div className="w-[15rem] md:w-[15rem] h-[15rem] bg-opacity-25 bg-primary-light flex flex-col items-center rounded-3xl justify-center">
+            <div className="w-[10rem] lg:w-[15rem] md:w-[12em] h-[15rem] bg-opacity-25 bg-primary-light flex flex-col items-center rounded-3xl justify-center">
               <p className="text-[3rem] font-bold text-primary-green">1000+</p>
               <p className="text-primary-light">Customers impacted</p>
             </div>
