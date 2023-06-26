@@ -45,7 +45,7 @@ export default function ContactForm() {
                 Phone*
               </label>
               <input
-                type="text"
+                type="number"
                 id="subject"
                 className="block p-3 w-full sm:w-[584px] h-[56px] text-sm text-white bg-[#2C2C2C] rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500"
               />
