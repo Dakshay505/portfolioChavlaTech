@@ -4,7 +4,7 @@ import phone2 from "../assets/images/phone2.png";
 export default function ContactForm() {
   return (
     <>
-      <section className="mt-16 bg-primary-dark">
+      <section className="mt-[8rem] md:mt-16 bg-primary-dark">
         <div className="py-8 lg:py-16 px-4 ml-5 mr-auto max-w-screen-md">
           <h2 className="font-nexa text-4xl font-extrabold leading-16 tracking-wide text-left text-primary-green">
             Let’s Connect!
