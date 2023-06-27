@@ -7,8 +7,20 @@ export default {
   theme: {
     extend: {
       screens: {
-        'lg':'1023px',
-        'md': '360px'
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '1050px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1524px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1980px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '2136px',
+        // => @media (min-width: 1536px) { ... }
       }
     },
   },
