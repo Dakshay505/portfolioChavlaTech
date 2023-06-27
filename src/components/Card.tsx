@@ -1,4 +1,4 @@
-import founder from '../assets/founder.png'
+import founder from '../assets/images/founder.png'
 
 const Card = () => {
     return (

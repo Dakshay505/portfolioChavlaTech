@@ -6,21 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      screens: {
-        'sm': '640px',
-        // => @media (min-width: 640px) { ... }
-  
-        'md': '1050px',
-        // => @media (min-width: 768px) { ... }
-  
-        'lg': '1524px',
-        // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1980px',
-        // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '2136px',
-        // => @media (min-width: 1536px) { ... }
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        "primary-green": "#8DE29E",
+        "primary-light": "#F2F2F2",
+        "primary-dark": "#060719",
       }
     },
   },
