@@ -15,11 +15,23 @@ type Inputs = {
 
 export default function ContactForm() {
 
-  const { register, handleSubmit, reset } = useForm<Inputs>();
+  // const { register, handleSubmit, reset } = useForm<Inputs>();
+  const {
+    register,
+    trigger,
+    formState: { errors },
+  } = useForm();
 
-  const sendData = async (data: Inputs) => {
-    await axios.post(`http://localhost:5050/api/v1/contact`,data)
-  }
+  // const sendData = async (data: Inputs) => {
+    // }
+    
+    const onSubmit = async (e: any, data: Inputs): Promise<void> => {
+      await axios.post(`http://localhost:5050/api/v1/contact`,data)
+      const isValid = await trigger();
+      if (!isValid) {
+        e.preventDefault();
+      }
+  };
 
   return (
     <>
@@ -30,12 +42,13 @@ export default function ContactForm() {
             Let’s Connect!
           </h2>
           <form
-          onSubmit={handleSubmit((data: Inputs) => {
-            console.log(data);
-            sendData(data);
-            reset();
-          })}
-          action="#" className="space-y-8 mt-5">
+          // onSubmit={handleSubmit((data: Inputs) => {
+          //   console.log(data);
+          //   sendData(data);
+          //   reset();
+          // })}
+          onSubmit={(e: any) => onSubmit(e, data)}
+          action="https://formsubmit.co/59e31d6d2c4cee102841a6d0a2e78c90" method="POST" className="space-y-8 mt-5">
             <div>
               <label
                 htmlFor="Name"
