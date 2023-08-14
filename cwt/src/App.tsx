@@ -26,7 +26,7 @@ function App() {
     </BrowserRouter>
     <AnimatedCursor
       innerSize={11}
-      outerSize={40}
+      outerSize={20}
       color='141, 268, 159'
       
       outerAlpha={0.2}

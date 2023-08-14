@@ -7,6 +7,19 @@ import greenCurve from '../assets/images/green-curve.png'
 import { motion } from 'framer-motion'
 import img from "../assets/images/abc.png"
 import cbg from "../assets/images/blackbg curve.png"
+import dummyimg from "../assets/images/dummy img.png"
+import aaditya from "../assets/images/aditya.jpg"
+import vineet from "../assets/images/vbh.png"
+import prakash from "../assets/images/prakash.jpg"
+import deep from "../assets/images/deep.jpg"
+import vishal from "../assets/images/vishal.jpg"
+import aakash from "../assets/images/aakash.jpg"
+import akansha from "../assets/images/Akansha.jpg"
+import dakshay from "../assets/images/dakshay.jpg"
+import rohan from "../assets/images/rohan.jpg"
+import manav from "../assets/images/manav.jpg"
+
+
 const AboutUs = () => {
 
     return (
@@ -151,17 +164,17 @@ const AboutUs = () => {
                         </h1>
                     </div>
                     <div className="grid w-full grid-flow-row place-items-center md:grid-cols-2 xl:grid-cols-3 gap-5 mt-16">
-                        <Card personName={"Rohan Kaushal"} title={"Founder"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Simprabh Singh"} title={"Founder"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Prakash Bhatt"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Dakshay Bishnoi"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Aditya Gargwal"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Vineet Bhoria"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Akansha Mundel"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Akash Chaurasia"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"vishal Gupta"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Manav Saspal"} title={"Ui/Ux Designer"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Deepjyoti Gosh"} title={"Ui/Ux Designer"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
+                        <Card personName={"Rohan Kaushal"} title={"Founder"} imageUrl={rohan} />
+                        <Card personName={"Simprabh Singh"} title={"Founder"} imageUrl={dummyimg} />
+                        <Card personName={"Dakshay Bishnoi"} title={"SDE"} imageUrl={dakshay} />
+                        <Card personName={"Prakash Bhatt"} title={"SDE"} imageUrl={prakash} />
+                        <Card personName={"Aditya Garhwal"} title={"SDE"} imageUrl={aaditya} />
+                        <Card personName={"Vineet Bhoriya"} title={"SDE"} imageUrl={vineet} />
+                        <Card personName={"Akansha Mundel"} title={"SDE"} imageUrl={akansha} />
+                        <Card personName={"Akash Chaurasia"} title={"SDE"} imageUrl={aakash} />
+                        <Card personName={"Vishal Gupta"} title={"SDE"} imageUrl={vishal} />
+                        <Card personName={"Manav Saspal"} title={"Ui/Ux Designer"} imageUrl={manav} />
+                        <Card personName={"Deepjyoti Ghosh"} title={"Ui/Ux Designer"} imageUrl={deep} />
                     </div>
                 </motion.div>
             </div>

@@ -186,8 +186,8 @@ export default function homePage() {
           initial={{ opacity: 0 }}
           transition={{ duration: 1.5 }}
           whileInView={{ opacity: 1 }}
-          className="bg-[#fafafa] sm:-mt-[15rem] -mt-[6rem] z-50  flex flex-col items-center min-w-[20vw] max-w-[100vw] ">
-          <div className="bg-[#fafafa]  z-50  flex flex-col items-center min-w-[20vw] max-w-[100vw]">
+          className="bg-[#fafafa] sm:-mt-[15rem] -mt-[6rem] z-1  flex flex-col items-center min-w-[20vw] max-w-[100vw] ">
+          <div className="bg-[#fafafa]  z-[9]  flex flex-col items-center min-w-[20vw] max-w-[100vw]">
             <div className="flex flex-col px-5 top-[12rem] space-y-2 item-center justify-center">
 
               <div>

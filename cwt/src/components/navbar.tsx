@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Test() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // G
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -24,7 +24,7 @@ export default function Test() {
       link: "/",
     },
     {
-      name: "About-us",
+      name: "About",
       link: "/about-us",
     },
     {
@@ -61,7 +61,7 @@ export default function Test() {
           <div className="md:hidden order-2">
             <button
               type="button"
-              className="text-white focus:ring-4 focus:ring-green-300"
+              className="text-white"
               onClick={toggleMenu}
             >
               {menuOpen ? (
