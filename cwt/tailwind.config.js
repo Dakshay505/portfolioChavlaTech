@@ -12,8 +12,10 @@ export default {
         "primary-green": "#8DE29E",
         "primary-light": "#F2F2F2",
         "primary-dark": "#060719",
-      },
+      }
     },
+    
   },
+  
   plugins: [],
 }

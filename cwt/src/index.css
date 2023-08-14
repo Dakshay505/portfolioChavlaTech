@@ -1,8 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*{
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+}
 
+.marquee-container {
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative;
+    width: var(--width);
+    transform: var(--transform);
+}
+
+.scrbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.scrbar::-webkit-scrollbar
+{
+	width: 2px;
+    margin-top: 6px;
+	background-color: #F5F5F5;
+    height: 2px;
+    display: none;
+}
+
+.scrbar::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 1px solid #555555;
+}
 
 
 .wave-div::after {
@@ -32,6 +67,7 @@
     animation: drift 12.5s 2s linear infinite both;
 }
 
+  
 
 @keyframes drift {
     from {
@@ -47,7 +83,8 @@
 
 
 
-@media (min-width:1023px) {
+
+@media (min-width:200px) {
     @-webkit-keyframes rotating
 
     /* Safari and Chrome */
@@ -91,3 +128,158 @@
         animation: rotating 35s linear infinite;
     }
 }
+
+
+
+.carousel .thumbs-wrapper{
+    display: none;
+}
+.carousel .carousel-status{
+    display: none;
+}
+.carousel .control-dots{
+    top: 14rem;
+}
+.carousel .control-dots .dot{
+    border: 2px solid #7CC68A;
+    background: transparent !important;
+}
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover{
+    background: #7CC68A !important;
+}
+.carousel .slide .legend{
+    opacity: 9 !important;
+    background:transparent !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    top: 7px;
+    
+}
+.carousel .slide .legend a button img{
+    height: 16px;
+    width: 16px;
+
+}
+.carousel .slide .legend a button {
+    height: 43px;
+
+}
+.carousel .control-dots{
+    gap: 5px !important;
+}
+
+
+@media (min-width:768px){
+    .carousel .control-dots{
+        top: 40rem;
+        gap: 15rem !important;
+    }
+    .carousel .slide .legend{
+       align-items: flex-start;
+       text-align: left;
+       max-width: 968px !important;
+        
+    }
+    .carousel .slide .legend h1,p{
+       /* align-items: flex-start; */
+       text-align: left;
+        
+    }
+    .carousel .slide .legend h1{
+      line-height: 50px;
+      font-weight: bold;
+        
+    }
+    .carousel .slide .legend a button img{
+        height: 22px;
+        width: 22px;
+    
+    }
+    .carousel .slide .legend a button p{
+      font-size: 20px;
+    
+    }
+
+}
+
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .custom-dot {
+    width: 155px;
+    height: 0px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .custom-dot.active {
+    background-color: #7CC68A; 
+    color: #7CC68A;
+    width: 155px;
+    height: 1px;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel .control-dots{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+
+  /* active nav */
+  .App {
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+    color: #7CC68A;
+  }
+  
+  @media (min-width:1024px){
+    .carousel .slide .legend{
+        align-items: flex-start;
+        text-align: left;
+        max-width: 800px !important;
+         
+     }
+
+  }
+
+
+
+  /* cursor */
+
+
+  

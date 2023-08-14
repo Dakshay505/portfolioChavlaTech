@@ -10,12 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.0",
+    "axios": "^1.4.0",
+    "framer-motion": "^10.12.17",
+    "node": "^20.5.0",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.8.1",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.0",
-    "react-router-dom": "^6.14.0"
+    "react-hook-form": "^7.45.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.14.0",
+    "slick-carousel": "^1.8.1",
+    "tailwind-react": "^1.0.1"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.16",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
@@ -25,8 +35,8 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   }
