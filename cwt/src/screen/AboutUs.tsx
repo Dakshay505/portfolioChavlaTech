@@ -155,9 +155,13 @@ const AboutUs = () => {
                         <Card personName={"Simprabh Singh"} title={"Founder"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
                         <Card personName={"Prakash Bhatt"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
                         <Card personName={"Dakshay Bishnoi"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
-                        <Card personName={"Aditys Gargwal"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
+                        <Card personName={"Aditya Gargwal"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
                         <Card personName={"Vineet Bhoria"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
+                        <Card personName={"Akansha Mundel"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
+                        <Card personName={"Akash Chaurasia"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
+                        <Card personName={"vishal Gupta"} title={"SDE"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
                         <Card personName={"Manav Saspal"} title={"Ui/Ux Designer"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
+                        <Card personName={"Deepjyoti Gosh"} title={"Ui/Ux Designer"} imageUrl={'https://chirpybazaar.com/wp-content/uploads/2019/05/dummy-man-570x570.png'} />
                     </div>
                 </motion.div>
             </div>
