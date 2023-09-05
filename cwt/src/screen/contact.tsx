@@ -23,7 +23,7 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm();
 
-  const api = "http://localhost:5050";
+  const api = "https://www.chawlatechnologies.com";
   const onSubmit = async (data: any): Promise<void> => {
     console.log(data);
     await axios.post(`${api}/api/v1/contact`, data);

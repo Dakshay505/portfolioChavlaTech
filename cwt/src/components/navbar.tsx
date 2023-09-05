@@ -103,7 +103,7 @@ export default function Test() {
             }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col justify-center w-[50%] md:w-full m-auto items-center text-[9px] md:text-[12px] lg:text-[18px] md:gap-3 md:flex-row md:p-0 mt-4 font-medium md:space-x-8 md:mt-0">
+          <ul className="flex flex-col justify-center w-[50%] md:w-full m-auto items-center text-[16px] lg:text-[18px] md:gap-3 md:flex-row md:p-0 mt-4 font-medium md:space-x-8 md:mt-0">
             {navLink.map((item, index) => {
               const isActive = location.pathname === item.link ;
               return (
